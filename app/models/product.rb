@@ -1,7 +1,10 @@
 class Product < ActiveRecord::Base
+  attr_accessible :description, :image_url, :price, :title
+
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   default_scope order: 'title'
 
-  attr_accessible :description, :image_url, :price, :title
 
   validates :description, :image_url, :title, :presence => true
 
@@ -14,4 +17,18 @@ class Product < ActiveRecord::Base
       :message => 'Must be a URL for GIF'
   }
 
+  has_many :line_items
+
+
+  private
+
+  # Ensure there are no line items referencing this product
+  def ensure_not_referenced_by_any_line_item
+    if line_items.empty?
+      return true
+    else
+      errors.add(:base, 'Line items present')
+      return false
+    end
+  end
 end
