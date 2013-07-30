@@ -18,19 +18,18 @@ class Product < ActiveRecord::Base
 
   default_scope order: 'title'
 
-
+  # VALIDATIONS==========================================
   validates :description, :image_url, :title, :presence => true
-
   validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
-
   validates :title, :uniqueness => true
-
   validates :image_url, :format => {
       :with => %r{\.(gif|jpg|png)}i,
       :message => 'Must be a URL for GIF'
   }
 
+  # ASSOCIATIONS==========================================
   has_many :line_items
+  has_many :orders, through: :line_items  #TODO: What is this doing?
 
 
   private
