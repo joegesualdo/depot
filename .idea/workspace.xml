@@ -15,13 +15,13 @@
     <file path="/depot.css" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375197445031" ignored="false" />
     <file path="/cart.rb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375132569634" ignored="false" />
     <file path="/line_item.rb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375189205367" ignored="false" />
-    <file path="/line_items_controller.rb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375198987393" ignored="false" />
+    <file path="/line_items_controller.rb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375199129988" ignored="false" />
     <file path="/show.html.erb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375196454976" ignored="false" />
     <file path="/carts_controller.rb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375197501988" ignored="false" />
-    <file path="/_line_item.html.erb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375195668155" ignored="false" />
+    <file path="/_line_item.html.erb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375199233056" ignored="false" />
     <file path="/store_controller.rb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375196777250" ignored="false" />
     <file path="/create.js.rjs" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375198165912" ignored="false" />
-    <file path="/create.js.erb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375198705765" ignored="false" />
+    <file path="/create.js.erb" changelist="b0d2f003-efdf-47df-ad52-a984ffa6c5fe" time="1375200673913" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,15 +68,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_cart.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/carts/_cart.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="0" selection-end="323" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="carts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/carts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,19 +95,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="line_items_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="line_items_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/line_items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="17" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.46078432">
+            <state line="49" column="45" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.js.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_line_item.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="5" selection-start="80" selection-end="80" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/create.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="35" selection-start="0" selection-end="58" vertical-scroll-proportion="0.0">
+            <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,7 +146,6 @@
         <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/app/models/cart.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/line_items/_line_item.html.erb" />
         <option value="$PROJECT_DIR$/app/views/carts/_cart.html.erb" />
         <option value="$PROJECT_DIR$/app/views/carts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -155,8 +154,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/depot.css" />
         <option value="$PROJECT_DIR$/app/views/store/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/line_items/create.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/line_items/create.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/line_items/_line_item.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/line_items/create.js.erb" />
       </list>
     </option>
   </component>
@@ -935,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="0" selection-end="319" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/carts/_cart.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="7" selection-start="0" selection-end="323" vertical-scroll-proportion="-4.375">
@@ -998,16 +991,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/create.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/line_items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="0" selection-end="58" vertical-scroll-proportion="0.0">
+        <state line="49" column="45" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/line_items_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="17" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.46078432">
+        <state line="4" column="5" selection-start="80" selection-end="80" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/create.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
